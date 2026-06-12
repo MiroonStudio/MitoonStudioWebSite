@@ -233,12 +233,16 @@ main {
     margin-top: 40px;
     color: var(--text-tertiary);
     font-size: 0.95rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
+    letter-spacing: 0.06em;
     border-left: 2px solid var(--border-subtle);
     padding-left: 16px;
-    max-width: 420px;
+    max-width: 560px;
     line-height: 1.8;
+}
+
+.studio-manifesto {
+    margin: 0;
+    line-height: 1.95;
 }
 
 .home-page .footer {
@@ -268,6 +272,10 @@ main {
     max-width: 420px;
     text-align: right;
     line-height: 1.8;
+}
+
+.footer-manifesto {
+    max-width: 420px;
 }
 
 .projects-page {
@@ -417,6 +425,75 @@ main {
     border: 1px solid var(--border-strong);
     background: var(--bg-overlay);
     color: var(--text-primary);
+}
+
+.status.planning {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--text-secondary);
+}
+
+.project-detail-page {
+    min-height: 100vh;
+    padding: 80px;
+    color: var(--text-primary);
+}
+
+.project-detail-hero {
+    max-width: 900px;
+    margin-bottom: 72px;
+}
+
+.project-detail-hero h1 {
+    margin-bottom: 18px;
+    font-size: clamp(3rem, 8vw, 5rem);
+    font-weight: 800;
+    line-height: 1;
+}
+
+.project-detail-subtitle {
+    margin-bottom: 22px;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+}
+
+.project-detail-description {
+    max-width: 720px;
+    margin-top: 30px;
+    color: var(--text-secondary);
+    font-size: 1.08rem;
+    line-height: 1.95;
+}
+
+.project-detail-actions {
+    margin-top: 32px;
+}
+
+.project-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.project-detail-card {
+    min-height: 220px;
+    padding: 28px;
+    border: 1px solid var(--border-subtle);
+    border-radius: 24px;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015)),
+        var(--bg-elevated);
+}
+
+.project-detail-card h2 {
+    margin-bottom: 14px;
+    font-size: 1.15rem;
+}
+
+.project-detail-card p {
+    color: var(--text-secondary);
+    line-height: 1.9;
 }
 
 .section-title {
@@ -656,6 +733,10 @@ main {
         text-align: left;
     }
 
+    .footer-manifesto {
+        max-width: none;
+    }
+
     .project-grid {
         grid-template-columns: 1fr;
     }
@@ -666,6 +747,14 @@ main {
 
     .project-card h2 {
         font-size: 1.65rem;
+    }
+
+    .project-detail-page {
+        padding: 32px 24px;
+    }
+
+    .project-detail-grid {
+        grid-template-columns: 1fr;
     }
 
     .project-footer {
